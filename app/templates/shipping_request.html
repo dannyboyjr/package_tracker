@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Package</title>
+</head>
+<body>
+    <h1>Create a Shipping Form!</h1>
+    <form method="post">
+        {{ form.csrf_token }}
+        <p>Sender Name: {{form.sender_name}} </p>
+        <p>Recipient: {{form.recipient}} </p>
+        <p>Sending from: {{form.origin}} </p>
+        <p>Destination: {{form.destination}} </p>
+        <p>Express Shipping : {{form.express_shipping}} </p>
+        <p>{{form.submit}} </p>
+    </form>
+   
+    
+</body>
+</html>
